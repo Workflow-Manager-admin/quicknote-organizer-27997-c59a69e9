@@ -4459,3 +4459,30 @@ Application bundle generation failed. [0.205 seconds]
          ╵     ~~~~~~~~~~~~~
 
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+styles.css           | styles           |  96.09 kB | 
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  33.89 kB | 
+
+                     | Initial total    | 220.18 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-PVHYY4NW.mjs   | -                |  34.33 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.370 seconds]
+
+▲ [WARNING] TS-998113: NoteDialogComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:25:4:
+      25 │     NoteDialogComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+

@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatIconModule } from '@angular/material/icon';
 import { Note, NoteInput } from '../../models/note.interface';
 
 interface DialogData {
@@ -62,10 +63,9 @@ interface DialogData {
 
         <mat-chip-listbox>
           @for (tag of noteInput.tags; track tag) {
-            <mat-chip-option
-              (removed)="removeTag(tag)">
+            <mat-chip-option>
               {{tag}}
-              <button matChipRemove>
+              <button matChipRemove (click)="removeTag(tag)">
                 <mat-icon>cancel</mat-icon>
               </button>
             </mat-chip-option>
@@ -111,7 +111,7 @@ export class NoteDialogComponent {
   tagInput = '';
 
   constructor(
-    public dialogRef: MatDialogRef<NoteDialogComponent>,
+    private dialogRef: MatDialogRef<NoteDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData
   ) {
     this.noteInput = data.isEdit
