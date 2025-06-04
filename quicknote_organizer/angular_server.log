@@ -4486,3 +4486,45 @@ Application bundle generation complete. [0.370 seconds]
          ╵     ~~~~~~~~~~~~~~~~~~~
 
 
+4:55:16 AM [vite] (ssr) ✨ new dependencies optimized: @angular/material/button, @angular/material/icon, @angular/material/dialog, @angular/animations, @angular/material/card, @angular/material/chips, @angular/forms, @angular/material/form-field, @angular/material/input, rxjs
+4:55:16 AM [vite] (ssr) ✨ optimized dependencies changed. reloading
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  34.32 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-2CJIYQXF.mjs  | -           |  34.76 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.398 seconds]
+
+▲ [WARNING] TS-998113: NoteDialogComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:25:4:
+      25 │     NoteDialogComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  34.32 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-LEKKMBNL.mjs  | -           |  34.76 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.213 seconds]
+
+Page reload sent to client(s).

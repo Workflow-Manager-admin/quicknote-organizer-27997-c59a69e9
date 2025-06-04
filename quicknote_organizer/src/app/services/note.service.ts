@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { BehaviorSubject, Observable, map } from 'rxjs';
 import { Note, NoteInput, NoteFilters } from '../models/note.interface';
 
@@ -7,8 +8,14 @@ import { Note, NoteInput, NoteFilters } from '../models/note.interface';
 })
 export class NoteService {
   private readonly STORAGE_KEY = 'quicknote_notes';
-  private notes = new BehaviorSubject<Note[]>(this.loadNotesFromStorage());
+  private notes = new BehaviorSubject<Note[]>([]);
   private filters = new BehaviorSubject<NoteFilters>({});
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.notes.next(this.loadNotesFromStorage());
+    }
+  }
 
   // PUBLIC_INTERFACE
   /**
@@ -99,7 +106,11 @@ export class NoteService {
   }
 
   private loadNotesFromStorage(): Note[] {
-    const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+    if (!isPlatformBrowser(this.platformId)) {
+      return [];
+    }
+
+    const savedNotes = window.localStorage.getItem(this.STORAGE_KEY);
     if (savedNotes) {
       try {
         const parsed = JSON.parse(savedNotes);
@@ -117,8 +128,12 @@ export class NoteService {
   }
 
   private saveNotesToStorage(notes: Note[]): void {
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
     try {
-      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+      window.localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
     } catch (error: any) {
       console.error('Error saving notes to storage:', error);
     }

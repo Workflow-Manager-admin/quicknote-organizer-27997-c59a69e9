@@ -21,8 +21,7 @@ import { Note, NoteInput } from './models/note.interface';
     MatDialogModule,
     NoteCardComponent,
     SearchBarComponent,
-    TagFilterComponent,
-    NoteDialogComponent
+    TagFilterComponent
   ],
   template: `
     <div class="container">
