@@ -23,11 +23,11 @@ import { Note } from '../../models/note.interface';
       </mat-card-header>
       <mat-card-content>
         <p>{{ note.content }}</p>
-        <mat-chip-set>
+        <mat-chip-listbox>
           @for (tag of note.tags; track tag) {
-            <mat-chip>{{ tag }}</mat-chip>
+            <mat-chip-option>{{ tag }}</mat-chip-option>
           }
-        </mat-chip-set>
+        </mat-chip-listbox>
       </mat-card-content>
       @if (isActionMode) {
         <mat-card-actions>

@@ -252,3 +252,73 @@ Application bundle generation failed. [0.346 seconds]
           ╵           ~~~~~~
 
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.248 seconds]
+
+▲ [WARNING] Duplicate member "noteService" in class body [duplicate-class-member]
+
+    src/app/app.component.ts:34:4:
+      34 │     noteService = inject(NoteService);
+         ╵     ~~~~~~~~~~~
+
+  The original member "noteService" is here:
+
+    src/app/app.component.ts:32:4:
+      32 │     noteService = inject(NoteService);
+         ╵     ~~~~~~~~~~~
+
+
+▲ [WARNING] Duplicate member "dialog" in class body [duplicate-class-member]
+
+    src/app/app.component.ts:35:4:
+      35 │     dialog = inject(MatDialog);
+         ╵     ~~~~~~
+
+  The original member "dialog" is here:
+
+    src/app/app.component.ts:33:4:
+      33 │     dialog = inject(MatDialog);
+         ╵     ~~~~~~
+
+
+▲ [WARNING] Duplicate member "noteService" in class body [duplicate-class-member]
+
+    src/app/app.component.ts:34:4:
+      34 │     noteService = inject(NoteService);
+         ╵     ~~~~~~~~~~~
+
+  The original member "noteService" is here:
+
+    src/app/app.component.ts:32:4:
+      32 │     noteService = inject(NoteService);
+         ╵     ~~~~~~~~~~~
+
+
+▲ [WARNING] Duplicate member "dialog" in class body [duplicate-class-member]
+
+    src/app/app.component.ts:35:4:
+      35 │     dialog = inject(MatDialog);
+         ╵     ~~~~~~
+
+  The original member "dialog" is here:
+
+    src/app/app.component.ts:33:4:
+      33 │     dialog = inject(MatDialog);
+         ╵     ~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'noteService'. [plugin angular-compiler]
+
+    src/app/app.component.ts:102:10:
+      102 │   private noteService = inject(NoteService);
+          ╵           ~~~~~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'dialog'. [plugin angular-compiler]
+
+    src/app/app.component.ts:103:10:
+      103 │   private dialog = inject(MatDialog);
+          ╵           ~~~~~~
+
+
