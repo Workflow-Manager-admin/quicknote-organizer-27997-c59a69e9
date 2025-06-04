@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -97,17 +97,14 @@ import { Note, NoteInput } from './models/note.interface';
     }
   `]
 })
-export class AppComponent {
-  private noteService = inject(NoteService);
-  private dialog = inject(MatDialog);
-
-  private noteService = inject(NoteService);
-  private dialog = inject(MatDialog);
+export class AppComponent implements OnInit {
+  private readonly noteService = inject(NoteService);
+  private readonly dialog = inject(MatDialog);
 
   notesList = signal<Note[]>([]);
   availableTags = signal<string[]>([]);
 
-  constructor() {
+  ngOnInit() {
     this.noteService.getNotes().subscribe(notes => this.notesList.set(notes));
     this.noteService.getAllTags().subscribe(tags => this.availableTags.set(tags));
   }
