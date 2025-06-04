@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+  --primary-color: #4A90E2;
+  --secondary-color: #FFFFFF;
+  --accent-color: #F5A623;
+  --background-color: #F5F5F5;
+  --text-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Material theme customization */
+.mat-mdc-fab.mat-primary {
+  background-color: var(--primary-color);
+}
+
+.mat-mdc-chip.mat-mdc-standard-chip {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.mat-mdc-card {
+  background-color: var(--secondary-color);
+}

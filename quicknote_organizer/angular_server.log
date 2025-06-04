@@ -28,3 +28,77 @@ Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.828 seconds]
+
+▲ [WARNING] TS-998113: RouterOutlet is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:19:4:
+      19 │     RouterOutlet,
+         ╵     ~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: This expression is not callable.
+  Type 'Observable<string[]>' has no call signatures. [plugin angular-compiler]
+
+    src/app/app.component.ts:32:25:
+      32 │         [availableTags]="tags()"
+         ╵                          ~~~~
+
+
+✘ [ERROR] NG9: This expression is not callable.
+  Type 'Observable<Note[]>' has no call signatures. [plugin angular-compiler]
+
+    src/app/app.component.ts:36:22:
+      36 │         @for (note of notes(); track note.id) {
+         ╵                       ~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'selected' since it isn't a known property of 'mat-chip'.
+1. If 'mat-chip' is an Angular component and it has 'selected' input, then verify that it is included in the '@Component.imports' of this component.
+2. If 'mat-chip' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component. [plugin angular-compiler]
+
+    src/app/components/tag-filter/tag-filter.component.ts:13:10:
+      13 │           [selected]="selectedTags.includes(tag)"
+         ╵           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.011 seconds]
+
+▲ [WARNING] TS-998113: RouterOutlet is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:19:4:
+      19 │     RouterOutlet,
+         ╵     ~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: This expression is not callable.
+  Type 'Observable<string[]>' has no call signatures. [plugin angular-compiler]
+
+    src/app/app.component.ts:32:25:
+      32 │         [availableTags]="tags()"
+         ╵                          ~~~~
+
+
+✘ [ERROR] NG9: This expression is not callable.
+  Type 'Observable<Note[]>' has no call signatures. [plugin angular-compiler]
+
+    src/app/app.component.ts:36:22:
+      36 │         @for (note of notes(); track note.id) {
+         ╵                       ~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'selected' since it isn't a known property of 'mat-chip'.
+1. If 'mat-chip' is an Angular component and it has 'selected' input, then verify that it is included in the '@Component.imports' of this component.
+2. If 'mat-chip' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component. [plugin angular-compiler]
+
+    src/app/components/tag-filter/tag-filter.component.ts:13:10:
+      13 │           [selected]="selectedTags.includes(tag)"
+         ╵           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
