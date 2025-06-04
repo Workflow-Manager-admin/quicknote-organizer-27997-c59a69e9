@@ -4413,3 +4413,49 @@ Application bundle generation failed. [0.345 seconds]
         ╵                                                  ^
 
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.466 seconds]
+
+▲ [WARNING] TS-998113: NoteDialogComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:25:4:
+      25 │     NoteDialogComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/components/note-dialog/note-dialog.component.ts:68:16:
+      68 │                 <mat-icon>cancel</mat-icon>
+         ╵                 ~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.205 seconds]
+
+▲ [WARNING] TS-998113: NoteDialogComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:25:4:
+      25 │     NoteDialogComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-991010: 'imports' must be an array of components, directives, pipes, or NgModules.
+  Value is of type '[CommonModule, FormsModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatChipsModule, (not statically analyzable)]'. [plugin angular-compiler]
+
+    src/app/components/note-dialog/note-dialog.component.ts:19:11:
+      19 │   imports: [
+         ╵            ^
+
+
+✘ [ERROR] TS2552: Cannot find name 'MatIconModule'. Did you mean 'MatInputModule'? [plugin angular-compiler]
+
+    src/app/components/note-dialog/note-dialog.component.ts:27:4:
+      27 │     MatIconModule
+         ╵     ~~~~~~~~~~~~~
+
+

@@ -23,7 +23,8 @@ interface DialogData {
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatChipsModule
+    MatChipsModule,
+    MatIconModule
   ],
   template: `
     <h2 mat-dialog-title>{{ data.isEdit ? 'Edit Note' : 'Create Note' }}</h2>
