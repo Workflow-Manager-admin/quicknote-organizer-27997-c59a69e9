@@ -119,18 +119,27 @@ export class AppComponent {
   }
 
   createNote() {
-    // TODO: Implement note creation dialog
-    const noteInput: NoteInput = {
-      title: 'New Note',
-      content: '',
-      tags: []
-    };
-    this.noteService.createNote(noteInput);
+    const dialogRef = this.dialog.open(NoteDialogComponent, {
+      data: { isEdit: false }
+    });
+
+    dialogRef.afterClosed().subscribe((result: NoteInput) => {
+      if (result) {
+        this.noteService.createNote(result);
+      }
+    });
   }
 
   editNote(note: Note) {
-    // TODO: Implement note editing dialog
-    console.log('Edit note:', note);
+    const dialogRef = this.dialog.open(NoteDialogComponent, {
+      data: { note, isEdit: true }
+    });
+
+    dialogRef.afterClosed().subscribe((result: NoteInput) => {
+      if (result) {
+        this.noteService.updateNote(note.id, result);
+      }
+    });
   }
 
   deleteNote(id: string) {
