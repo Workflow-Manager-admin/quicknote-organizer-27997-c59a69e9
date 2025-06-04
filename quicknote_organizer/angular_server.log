@@ -406,3 +406,89 @@ Application bundle generation failed. [0.366 seconds]
           ╵                                        ~~~~~~~~~~~~~~~~~~~
 
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.460 seconds]
+
+▲ [WARNING] TS-998113: NoteDialogComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:25:4:
+      25 │     NoteDialogComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Duplicate member "noteService" in class body [duplicate-class-member]
+
+    src/app/app.component.ts:35:4:
+      35 │     noteService = inject(NoteService);
+         ╵     ~~~~~~~~~~~
+
+  The original member "noteService" is here:
+
+    src/app/app.component.ts:33:4:
+      33 │     noteService = inject(NoteService);
+         ╵     ~~~~~~~~~~~
+
+
+▲ [WARNING] Duplicate member "dialog" in class body [duplicate-class-member]
+
+    src/app/app.component.ts:36:4:
+      36 │     dialog = inject(MatDialog);
+         ╵     ~~~~~~
+
+  The original member "dialog" is here:
+
+    src/app/app.component.ts:34:4:
+      34 │     dialog = inject(MatDialog);
+         ╵     ~~~~~~
+
+
+▲ [WARNING] Duplicate member "noteService" in class body [duplicate-class-member]
+
+    src/app/app.component.ts:35:4:
+      35 │     noteService = inject(NoteService);
+         ╵     ~~~~~~~~~~~
+
+  The original member "noteService" is here:
+
+    src/app/app.component.ts:33:4:
+      33 │     noteService = inject(NoteService);
+         ╵     ~~~~~~~~~~~
+
+
+▲ [WARNING] Duplicate member "dialog" in class body [duplicate-class-member]
+
+    src/app/app.component.ts:36:4:
+      36 │     dialog = inject(MatDialog);
+         ╵     ~~~~~~
+
+  The original member "dialog" is here:
+
+    src/app/app.component.ts:34:4:
+      34 │     dialog = inject(MatDialog);
+         ╵     ~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'noteService'. [plugin angular-compiler]
+
+    src/app/app.component.ts:104:10:
+      104 │   private noteService = inject(NoteService);
+          ╵           ~~~~~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'dialog'. [plugin angular-compiler]
+
+    src/app/app.component.ts:105:10:
+      105 │   private dialog = inject(MatDialog);
+          ╵           ~~~~~~
+
+
+✘ [ERROR] NG8001: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/components/note-dialog/note-dialog.component.ts:68:16:
+      68 │                 <mat-icon>cancel</mat-icon>
+         ╵                 ~~~~~~~~~~
+
+

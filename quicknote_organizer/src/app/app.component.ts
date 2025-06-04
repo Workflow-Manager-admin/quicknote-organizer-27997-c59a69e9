@@ -7,6 +7,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { NoteCardComponent } from './components/note-card/note-card.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { TagFilterComponent } from './components/tag-filter/tag-filter.component';
+import { NoteDialogComponent } from './components/note-dialog/note-dialog.component';
 import { NoteService } from './services/note.service';
 import { Note, NoteInput } from './models/note.interface';
 
@@ -20,7 +21,8 @@ import { Note, NoteInput } from './models/note.interface';
     MatDialogModule,
     NoteCardComponent,
     SearchBarComponent,
-    TagFilterComponent
+    TagFilterComponent,
+    NoteDialogComponent
   ],
   template: `
     <div class="container">
