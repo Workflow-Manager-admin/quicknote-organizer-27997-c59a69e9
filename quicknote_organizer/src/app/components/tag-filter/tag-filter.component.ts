@@ -1,21 +1,22 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-tag-filter',
   standalone: true,
-  imports: [CommonModule, MatChipsModule],
+  imports: [CommonModule, MatChipsModule, MatIconModule],
   template: `
-    <mat-chip-set multiple selectable>
+    <mat-chip-listbox multiple [selectable]="true">
       @for (tag of availableTags; track tag) {
-        <mat-chip
+        <mat-chip-option
           [selected]="selectedTags.includes(tag)"
-          (click)="toggleTag(tag)">
+          (selectionChange)="toggleTag(tag)">
           {{ tag }}
-        </mat-chip>
+        </mat-chip-option>
       }
-    </mat-chip-set>
+    </mat-chip-listbox>
   `,
   styles: [`
     mat-chip-set {

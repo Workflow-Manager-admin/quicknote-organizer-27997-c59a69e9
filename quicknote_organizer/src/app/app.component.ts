@@ -1,6 +1,5 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
@@ -16,7 +15,6 @@ import { Note, NoteInput } from './models/note.interface';
   standalone: true,
   imports: [
     CommonModule,
-    RouterOutlet,
     MatButtonModule,
     MatIconModule,
     MatDialogModule,
@@ -29,11 +27,11 @@ import { Note, NoteInput } from './models/note.interface';
       <app-search-bar (search)="onSearch($event)" />
       
       <app-tag-filter
-        [availableTags]="tags()"
+        [availableTags]="availableTags()"
         (filterChange)="onTagFilter($event)" />
 
       <div class="notes-grid">
-        @for (note of notes(); track note.id) {
+        @for (note of notesList(); track note.id) {
           <app-note-card
             [note]="note"
             (onEdit)="editNote($event)"
@@ -101,8 +99,16 @@ export class AppComponent {
   private noteService = inject(NoteService);
   private dialog = inject(MatDialog);
 
-  notes = this.noteService.getNotes();
-  tags = this.noteService.getAllTags();
+  private noteService = inject(NoteService);
+  private dialog = inject(MatDialog);
+
+  notesList = signal<Note[]>([]);
+  availableTags = signal<string[]>([]);
+
+  constructor() {
+    this.noteService.getNotes().subscribe(notes => this.notesList.set(notes));
+    this.noteService.getAllTags().subscribe(tags => this.availableTags.set(tags));
+  }
 
   onSearch(term: string) {
     this.noteService.updateFilters({ searchTerm: term });
