@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
@@ -9,9 +10,41 @@ import { Note } from '../../models/note.interface';
   selector: 'app-note-card',
   standalone: true,
   imports: [CommonModule, MatCardModule, MatChipsModule, MatIconModule],
+  animations: [
+    trigger('cardAnimation', [
+      state('void', style({
+        opacity: 0,
+        transform: 'scale(0.8)'
+      })),
+      state('*', style({
+        opacity: 1,
+        transform: 'scale(1)'
+      })),
+      transition('void => *', [
+        animate('200ms ease-out')
+      ]),
+      transition('* => void', [
+        animate('150ms ease-in')
+      ])
+    ]),
+    trigger('actionMode', [
+      state('true', style({
+        opacity: 1,
+        height: '*'
+      })),
+      state('false', style({
+        opacity: 0,
+        height: '0'
+      })),
+      transition('true <=> false', [
+        animate('200ms ease-in-out')
+      ])
+    ])
+  ],
   template: `
     <mat-card 
       class="note-card"
+      [@cardAnimation]
       (longpress)="onLongPress()"
       (swipeleft)="onSwipeLeft()"
       (swiperight)="onSwipeRight()">
@@ -30,7 +63,7 @@ import { Note } from '../../models/note.interface';
         </mat-chip-listbox>
       </mat-card-content>
       @if (isActionMode) {
-        <mat-card-actions>
+        <mat-card-actions [@actionMode]="isActionMode">
           <button mat-icon-button (click)="onEdit.emit(note)">
             <mat-icon>edit</mat-icon>
           </button>

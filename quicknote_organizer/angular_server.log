@@ -512,3 +512,1951 @@ Application bundle generation failed. [0.405 seconds]
          ╵                 ~~~~~~~~~~
 
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.375 seconds]
+
+▲ [WARNING] TS-998113: NoteDialogComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:25:4:
+      25 │     NoteDialogComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'notes' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/app.component.ts:108:42:
+      108 │ ...Service.getNotes().subscribe(notes => this.notesList.set(notes));
+          ╵                                 ~~~~~
+
+
+✘ [ERROR] TS2339: Property 'getAllTags' does not exist on type 'NoteService'. [plugin angular-compiler]
+
+    src/app/app.component.ts:109:21:
+      109 │     this.noteService.getAllTags().subscribe(tags => this.availabl...
+          ╵                      ~~~~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'tags' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/app.component.ts:109:44:
+      109 │ ...rvice.getAllTags().subscribe(tags => this.availableTags.set(ta...
+          ╵                                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'updateFilters' does not exist on type 'NoteService'. [plugin angular-compiler]
+
+    src/app/app.component.ts:113:21:
+      113 │     this.noteService.updateFilters({ searchTerm: term });
+          ╵                      ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'updateFilters' does not exist on type 'NoteService'. [plugin angular-compiler]
+
+    src/app/app.component.ts:117:21:
+      117 │     this.noteService.updateFilters({ tags });
+          ╵                      ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'createNote' does not exist on type 'NoteService'. [plugin angular-compiler]
+
+    src/app/app.component.ts:127:25:
+      127 │         this.noteService.createNote(result);
+          ╵                          ~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'updateNote' does not exist on type 'NoteService'. [plugin angular-compiler]
+
+    src/app/app.component.ts:139:25:
+      139 │         this.noteService.updateNote(note.id, result);
+          ╵                          ~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'deleteNote' does not exist on type 'NoteService'. [plugin angular-compiler]
+
+    src/app/app.component.ts:145:21:
+      145 │     this.noteService.deleteNote(id);
+          ╵                      ~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/components/note-dialog/note-dialog.component.ts:68:16:
+      68 │                 <mat-icon>cancel</mat-icon>
+         ╵                 ~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:1:22:
+      1 │ import { Injectable   private loadNotesFromStorage(): Note[] {
+        ╵                       ~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'private'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:1:22:
+      1 │ import { Injectable   private loadNotesFromStorage(): Note[] {
+        ╵                       ~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'private'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:1:22:
+      1 │ import { Injectable   private loadNotesFromStorage(): Note[] {
+        ╵                       ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:1:30:
+      1 │ import { Injectable   private loadNotesFromStorage(): Note[] {
+        ╵                               ~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'loadNotesFromStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:1:30:
+      1 │ import { Injectable   private loadNotesFromStorage(): Note[] {
+        ╵                               ~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'loadNotesFromStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:1:30:
+      1 │ import { Injectable   private loadNotesFromStorage(): Note[] {
+        ╵                               ~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:1:50:
+      1 │ import { Injectable   private loadNotesFromStorage(): Note[] {
+        ╵                                                   ^
+
+
+✘ [ERROR] TS1141: String literal expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:1:50:
+      1 │ import { Injectable   private loadNotesFromStorage(): Note[] {
+        ╵                                                   ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: '=>' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:1:61:
+      1 │ import { Injectable   private loadNotesFromStorage(): Note[] {
+        ╵                                                              ^
+
+
+✘ [ERROR] Expected string but found "("
+
+    src/app/services/note.service.ts:2:49:
+      2 │ import { Injectable, loadNotesFromStorage } from (): Note[] => {
+        ╵                                                  ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:19:2:
+      19 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'saveNotesToStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:19:10:
+      19 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵           ~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2552: Cannot find name 'notes'. Did you mean 'Note'? [plugin angular-compiler]
+
+    src/app/services/note.service.ts:19:29:
+      19 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                              ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:19:34:
+      19 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                                   ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:19:41:
+      19 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                                          ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:19:43:
+      19 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                                            ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:20:8:
+      20 │     try {
+         ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:21:18:
+      21 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                   ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:21:27:
+      21 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                            ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:21:60:
+      21 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                                                             ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:21:67:
+      21 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                                                                    ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:22:6:
+      22 │     } catch (e) {
+         ╵       ~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'e' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:22:13:
+      22 │     } catch (e) {
+         ╵              ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:26:0:
+      26 │ } from '@angular/core';
+         ╵ ^
+
+
+✘ [ERROR] TS1434: Unexpected keyword or identifier. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:26:2:
+      26 │ } from '@angular/core';
+         ╵   ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'from'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:26:2:
+      26 │ } from '@angular/core';
+         ╵   ~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:27:44:
+      27 │ ...rSubject, Observable, map   private loadNotesFromStorage(): Not...
+         ╵                                ~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'private'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:27:44:
+      27 │ ...rSubject, Observable, map   private loadNotesFromStorage(): Not...
+         ╵                                ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:27:52:
+      27 │ ...ubject, Observable, map   private loadNotesFromStorage(): Note[] {
+         ╵                                      ~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'loadNotesFromStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:27:52:
+      27 │ ...ubject, Observable, map   private loadNotesFromStorage(): Note[] {
+         ╵                                      ~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:27:72:
+      27 │ ...ubject, Observable, map   private loadNotesFromStorage(): Note[] {
+         ╵                                                          ^
+
+
+✘ [ERROR] TS1141: String literal expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:27:72:
+      27 │ ...ubject, Observable, map   private loadNotesFromStorage(): Note[] {
+         ╵                                                          ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: '=>' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:27:83:
+      27 │ ...ubject, Observable, map   private loadNotesFromStorage(): Note[] {
+         ╵                                                                     ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:45:2:
+      45 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'saveNotesToStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:45:10:
+      45 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵           ~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2552: Cannot find name 'notes'. Did you mean 'Note'? [plugin angular-compiler]
+
+    src/app/services/note.service.ts:45:29:
+      45 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                              ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:45:34:
+      45 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                                   ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:45:41:
+      45 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                                          ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:45:43:
+      45 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                                            ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:46:8:
+      46 │     try {
+         ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:47:18:
+      47 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                   ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:47:27:
+      47 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                            ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:47:60:
+      47 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                                                             ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:47:67:
+      47 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                                                                    ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:48:6:
+      48 │     } catch (e) {
+         ╵       ~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'e' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:48:13:
+      48 │     } catch (e) {
+         ╵              ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:52:0:
+      52 │ } from 'rxjs';
+         ╵ ^
+
+
+✘ [ERROR] TS1434: Unexpected keyword or identifier. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:52:2:
+      52 │ } from 'rxjs';
+         ╵   ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'from'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:52:2:
+      52 │ } from 'rxjs';
+         ╵   ~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:53:40:
+      53 │ ...e, NoteInput, NoteFilters   private loadNotesFromStorage(): Not...
+         ╵                                ~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'private'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:53:40:
+      53 │ ...e, NoteInput, NoteFilters   private loadNotesFromStorage(): Not...
+         ╵                                ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:53:48:
+      53 │ ... NoteInput, NoteFilters   private loadNotesFromStorage(): Note[] {
+         ╵                                      ~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2300: Duplicate identifier 'loadNotesFromStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:53:48:
+      53 │ ... NoteInput, NoteFilters   private loadNotesFromStorage(): Note[] {
+         ╵                                      ~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:53:68:
+      53 │ ... NoteInput, NoteFilters   private loadNotesFromStorage(): Note[] {
+         ╵                                                          ^
+
+
+✘ [ERROR] TS1141: String literal expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:53:68:
+      53 │ ... NoteInput, NoteFilters   private loadNotesFromStorage(): Note[] {
+         ╵                                                          ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: '=>' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:53:79:
+      53 │ ... NoteInput, NoteFilters   private loadNotesFromStorage(): Note[] {
+         ╵                                                                     ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:71:2:
+      71 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'saveNotesToStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:71:10:
+      71 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵           ~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2552: Cannot find name 'notes'. Did you mean 'Note'? [plugin angular-compiler]
+
+    src/app/services/note.service.ts:71:29:
+      71 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                              ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:71:34:
+      71 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                                   ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:71:41:
+      71 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                                          ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:71:43:
+      71 │   private saveNotesToStorage(notes: Note[]): void {
+         ╵                                            ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:72:8:
+      72 │     try {
+         ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:73:18:
+      73 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                   ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:73:27:
+      73 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                            ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:73:60:
+      73 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                                                             ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:73:67:
+      73 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+         ╵                                                                    ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:74:6:
+      74 │     } catch (e) {
+         ╵       ~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'e' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:74:13:
+      74 │     } catch (e) {
+         ╵              ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:78:0:
+      78 │ } from '../models/note.interface';
+         ╵ ^
+
+
+✘ [ERROR] TS1434: Unexpected keyword or identifier. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:78:2:
+      78 │ } from '../models/note.interface';
+         ╵   ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'from'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:78:2:
+      78 │ } from '../models/note.interface';
+         ╵   ~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:82:2:
+      82 │   private loadNotesFromStorage(): Note[] {
+         ╵   ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:100:2:
+      100 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:129:2:
+      129 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'notes' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:144:10:
+      144 │       map(notes => this.applyFilters(notes, this.filters.value))
+          ╵           ~~~~~
+
+
+✘ [ERROR] TS2339: Property 'applyFilters' does not exist on type 'NoteService'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:144:24:
+      144 │       map(notes => this.applyFilters(notes, this.filters.value))
+          ╵                         ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:146:4:
+      146 │     private loadNotesFromStorage(): Note[] {
+          ╵     ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'getAllTags'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:177:2:
+      177 │   getAllTags(): Observable<string[]> {
+          ╵   ~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:177:14:
+      177 │   getAllTags(): Observable<string[]> {
+          ╵               ^
+
+
+✘ [ERROR] TS2365: Operator '>' cannot be applied to types 'boolean' and '{ return: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:177:16:
+      177 │   getAllTags(): Observable<string[]> {
+          ╵                 ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2693: 'string' only refers to a type, but is being used as a value here. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:177:27:
+      177 │   getAllTags(): Observable<string[]> {
+          ╵                            ~~~~~~
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:177:34:
+      177 │   getAllTags(): Observable<string[]> {
+          ╵                                   ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:178:11:
+      178 │     return this.notes.pipe(
+          ╵            ~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:178:11:
+      178 │     return this.notes.pipe(
+          ╵            ~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'notes' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:179:10:
+      179 │       map(notes => [...new Set(notes.flatMap(note => note.tags))])
+          ╵           ~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'note' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:179:45:
+      179 │       map(notes => [...new Set(notes.flatMap(note => note.tags))])
+          ╵                                              ~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:180:5:
+      180 │     );
+          ╵      ^
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ return: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:182:49:
+      182 │     const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+          ╵                                                  ~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:199:2:
+      199 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ return: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:201:32:
+      201 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                 ~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'createNote'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:212:2:
+      212 │   createNote(noteInput: NoteInput): void {
+          ╵   ~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'noteInput'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:212:13:
+      212 │   createNote(noteInput: NoteInput): void {
+          ╵              ~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:212:22:
+      212 │   createNote(noteInput: NoteInput): void {
+          ╵                       ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:212:34:
+      212 │   createNote(noteInput: NoteInput): void {
+          ╵                                   ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:213:10:
+      213 │     const newNote: Note = {
+          ╵           ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'newNote'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:213:10:
+      213 │     const newNote: Note = {
+          ╵           ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:213:17:
+      213 │     const newNote: Note = {
+          ╵                  ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'noteInput'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:215:9:
+      215 │       ...noteInput,
+          ╵          ~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:218:6:
+      218 │       private loadNotesFromStorage(): Note[] {
+          ╵       ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:236:2:
+      236 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:243:1:
+      243 │ };
+          ╵  ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:244:10:
+      244 │     const updatedNotes = [...this.notes.value, newNote];
+          ╵           ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'updatedNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:244:10:
+      244 │     const updatedNotes = [...this.notes.value, newNote];
+          ╵           ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:244:29:
+      244 │     const updatedNotes = [...this.notes.value, newNote];
+          ╵                              ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'newNote'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:244:47:
+      244 │     const updatedNotes = [...this.notes.value, newNote];
+          ╵                                                ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:244:55:
+      244 │     const updatedNotes = [...this.notes.value, newNote];
+          ╵                                                        ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:245:8:
+      245 │     this.notes.next(updatedNotes);
+          ╵         ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'updatedNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:245:20:
+      245 │     this.notes.next(updatedNotes);
+          ╵                     ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:245:33:
+      245 │     this.notes.next(updatedNotes);
+          ╵                                  ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:246:8:
+      246 │     this.saveNotesToStorage(updatedNotes);
+          ╵         ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'updatedNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:246:28:
+      246 │     this.saveNotesToStorage(updatedNotes);
+          ╵                             ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:246:41:
+      246 │     this.saveNotesToStorage(updatedNotes);
+          ╵                                          ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:247:8:
+      247 │     this.saveNotesToStorage(updatedNotes);
+          ╵         ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'updatedNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:247:28:
+      247 │     this.saveNotesToStorage(updatedNotes);
+          ╵                             ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:247:41:
+      247 │     this.saveNotesToStorage(updatedNotes);
+          ╵                                          ^
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ const: any[]; Note: any; this: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:249:49:
+      249 │     const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+          ╵                                                  ~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:266:2:
+      266 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ const: any[]; Note: any; this: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:268:32:
+      268 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                 ~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'updateNote'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:279:2:
+      279 │   updateNote(id: string, noteInput: NoteInput): void {
+          ╵   ~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'id'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:279:13:
+      279 │   updateNote(id: string, noteInput: NoteInput): void {
+          ╵              ~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:279:15:
+      279 │   updateNote(id: string, noteInput: NoteInput): void {
+          ╵                ^
+
+
+✘ [ERROR] TS2693: 'string' only refers to a type, but is being used as a value here. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:279:17:
+      279 │   updateNote(id: string, noteInput: NoteInput): void {
+          ╵                  ~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'noteInput'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:279:25:
+      279 │   updateNote(id: string, noteInput: NoteInput): void {
+          ╵                          ~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:279:34:
+      279 │   updateNote(id: string, noteInput: NoteInput): void {
+          ╵                                   ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:279:46:
+      279 │   updateNote(id: string, noteInput: NoteInput): void {
+          ╵                                               ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:280:10:
+      280 │     const updatedNotes = this.notes.value.map(note =>
+          ╵           ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'updatedNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:280:10:
+      280 │     const updatedNotes = this.notes.value.map(note =>
+          ╵           ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:280:25:
+      280 │     const updatedNotes = this.notes.value.map(note =>
+          ╵                          ~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'note' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:280:46:
+      280 │     const updatedNotes = this.notes.value.map(note =>
+          ╵                                               ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'id'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:281:18:
+      281 │       note.id === id
+          ╵                   ~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'noteInput'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:282:24:
+      282 │         ? { ...note, ...noteInput, updatedAt: new Date()   privat...
+          ╵                         ~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:282:59:
+      282 │ ...ut, updatedAt: new Date()   private loadNotesFromStorage(): No...
+          ╵                                ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:300:2:
+      300 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:309:5:
+      309 │     );
+          ╵      ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:310:8:
+      310 │     this.notes.next(updatedNotes);
+          ╵         ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'updatedNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:310:20:
+      310 │     this.notes.next(updatedNotes);
+          ╵                     ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:310:33:
+      310 │     this.notes.next(updatedNotes);
+          ╵                                  ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:311:8:
+      311 │     this.saveNotesToStorage(updatedNotes);
+          ╵         ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'updatedNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:311:28:
+      311 │     this.saveNotesToStorage(updatedNotes);
+          ╵                             ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:311:41:
+      311 │     this.saveNotesToStorage(updatedNotes);
+          ╵                                          ^
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ const: any; this: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:313:49:
+      313 │     const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+          ╵                                                  ~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:330:2:
+      330 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ const: any; this: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:332:32:
+      332 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                 ~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'deleteNote'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:343:2:
+      343 │   deleteNote(id: string): void {
+          ╵   ~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'id'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:343:13:
+      343 │   deleteNote(id: string): void {
+          ╵              ~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:343:15:
+      343 │   deleteNote(id: string): void {
+          ╵                ^
+
+
+✘ [ERROR] TS2693: 'string' only refers to a type, but is being used as a value here. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:343:17:
+      343 │   deleteNote(id: string): void {
+          ╵                  ~~~~~~
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:343:24:
+      343 │   deleteNote(id: string): void {
+          ╵                         ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:344:10:
+      344 │     const filteredNotes = this.notes.value.filter(note => note.id...
+          ╵           ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'filteredNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:344:10:
+      344 │     const filteredNotes = this.notes.value.filter(note => note.id...
+          ╵           ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:344:26:
+      344 │     const filteredNotes = this.notes.value.filter(note => note.id...
+          ╵                           ~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'note' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:344:50:
+      344 │ ... filteredNotes = this.notes.value.filter(note => note.id !== id);
+          ╵                                             ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'id'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:344:70:
+      344 │ ... filteredNotes = this.notes.value.filter(note => note.id !== id);
+          ╵                                                                 ~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:344:73:
+      344 │ ... filteredNotes = this.notes.value.filter(note => note.id !== id);
+          ╵                                                                    ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:345:8:
+      345 │     this.notes.next(filteredNotes);
+          ╵         ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'filteredNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:345:20:
+      345 │     this.notes.next(filteredNotes);
+          ╵                     ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:345:34:
+      345 │     this.notes.next(filteredNotes);
+          ╵                                   ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:346:8:
+      346 │     this.saveNotesToStorage(filteredNotes);
+          ╵         ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'filteredNotes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:346:28:
+      346 │     this.saveNotesToStorage(filteredNotes);
+          ╵                             ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:346:42:
+      346 │     this.saveNotesToStorage(filteredNotes);
+          ╵                                           ^
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ const: any; this: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:348:49:
+      348 │     const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+          ╵                                                  ~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:365:2:
+      365 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ const: any; this: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:367:32:
+      367 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                 ~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'updateFilters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:378:2:
+      378 │   updateFilters(filters: NoteFilters): void {
+          ╵   ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'filters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:378:16:
+      378 │   updateFilters(filters: NoteFilters): void {
+          ╵                 ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:378:23:
+      378 │   updateFilters(filters: NoteFilters): void {
+          ╵                        ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:378:37:
+      378 │   updateFilters(filters: NoteFilters): void {
+          ╵                                      ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:379:8:
+      379 │     this.filters.next(filters);
+          ╵         ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'filters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:379:22:
+      379 │     this.filters.next(filters);
+          ╵                       ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:379:30:
+      379 │     this.filters.next(filters);
+          ╵                               ^
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ this: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:381:49:
+      381 │     const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+          ╵                                                  ~~~~~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:398:2:
+      398 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'STORAGE_KEY' does not exist on type '{ this: any; loadNotesFromStorage(): Note[]; saveNotesToStorage(notes: Note[]): void; }'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:400:32:
+      400 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                 ~~~~~~~~~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:2:
+      407 │   private applyFilters(notes: Note[], filters: NoteFilters): Note...
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'applyFilters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:10:
+      407 │   private applyFilters(notes: Note[], filters: NoteFilters): Note...
+          ╵           ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:23:
+      407 │   private applyFilters(notes: Note[], filters: NoteFilters): Note...
+          ╵                        ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:28:
+      407 │   private applyFilters(notes: Note[], filters: NoteFilters): Note...
+          ╵                             ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:35:
+      407 │ ...ivate applyFilters(notes: Note[], filters: NoteFilters): Note[] {
+          ╵                                   ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'filters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:38:
+      407 │ ...ivate applyFilters(notes: Note[], filters: NoteFilters): Note[] {
+          ╵                                      ~~~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:45:
+      407 │ ...ivate applyFilters(notes: Note[], filters: NoteFilters): Note[] {
+          ╵                                             ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:59:
+      407 │ ...ivate applyFilters(notes: Note[], filters: NoteFilters): Note[] {
+          ╵                                                           ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:66:
+      407 │ ...ivate applyFilters(notes: Note[], filters: NoteFilters): Note[] {
+          ╵                                                                  ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:407:68:
+      407 │ ...ivate applyFilters(notes: Note[], filters: NoteFilters): Note[] {
+          ╵                                                                    ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:408:28:
+      408 │     let filteredNotes = [...notes];
+          ╵                             ~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'filters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:410:8:
+      410 │     if (filters.searchTerm) {
+          ╵         ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'filters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:411:25:
+      411 │       const searchTerm = filters.searchTerm.toLowerCase();
+          ╵                          ~~~~~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:416:6:
+      416 │       private loadNotesFromStorage(): Note[] {
+          ╵       ~~~~~~~
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:416:36:
+      416 │       private loadNotesFromStorage(): Note[] {
+          ╵                                     ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:416:43:
+      416 │       private loadNotesFromStorage(): Note[] {
+          ╵                                            ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:416:45:
+      416 │       private loadNotesFromStorage(): Note[] {
+          ╵                                              ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:417:44:
+      417 │     const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+          ╵                                             ~~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:434:2:
+      434 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'saveNotesToStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:434:10:
+      434 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵           ~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:434:29:
+      434 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                              ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:434:34:
+      434 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                   ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:434:41:
+      434 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                          ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:434:43:
+      434 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                            ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:435:8:
+      435 │     try {
+          ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:436:18:
+      436 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                   ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:436:27:
+      436 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                            ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:436:60:
+      436 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                                             ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:436:67:
+      436 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                                                    ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:437:6:
+      437 │     } catch (e) {
+          ╵       ~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'e' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:437:13:
+      437 │     } catch (e) {
+          ╵              ^
+
+
+✘ [ERROR] TS2304: Cannot find name 'filters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:443:8:
+      443 │     if (filters.tags && filters.tags.length > 0) {
+          ╵         ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'filters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:443:24:
+      443 │     if (filters.tags && filters.tags.length > 0) {
+          ╵                         ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'filters'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:445:8:
+      445 │         filters.tags!.some(tag => note.tags.includes(tag))
+          ╵         ~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'tag' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:445:27:
+      445 │         filters.tags!.some(tag => note.tags.includes(tag))
+          ╵                            ~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:447:6:
+      447 │       private loadNotesFromStorage(): Note[] {
+          ╵       ~~~~~~~
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:447:36:
+      447 │       private loadNotesFromStorage(): Note[] {
+          ╵                                     ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:447:43:
+      447 │       private loadNotesFromStorage(): Note[] {
+          ╵                                            ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:447:45:
+      447 │       private loadNotesFromStorage(): Note[] {
+          ╵                                              ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:448:44:
+      448 │     const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+          ╵                                             ~~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:465:2:
+      465 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'saveNotesToStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:465:10:
+      465 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵           ~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:465:29:
+      465 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                              ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:465:34:
+      465 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                   ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:465:41:
+      465 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                          ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:465:43:
+      465 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                            ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:466:8:
+      466 │     try {
+          ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:467:18:
+      467 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                   ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:467:27:
+      467 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                            ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:467:60:
+      467 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                                             ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:467:67:
+      467 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                                                    ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:468:6:
+      468 │     } catch (e) {
+          ╵       ~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'e' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:468:13:
+      468 │     } catch (e) {
+          ╵              ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:475:4:
+      475 │     private loadNotesFromStorage(): Note[] {
+          ╵     ~~~~~~~
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:475:34:
+      475 │     private loadNotesFromStorage(): Note[] {
+          ╵                                   ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:475:41:
+      475 │     private loadNotesFromStorage(): Note[] {
+          ╵                                          ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:475:43:
+      475 │     private loadNotesFromStorage(): Note[] {
+          ╵                                            ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:476:44:
+      476 │     const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+          ╵                                             ~~~~
+
+
+✘ [ERROR] TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:479:34:
+      479 │         const parsed = JSON.parse(savedNotes);
+          ╵                                   ~~~~~~~~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:493:2:
+      493 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'saveNotesToStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:493:10:
+      493 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵           ~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:493:29:
+      493 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                              ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:493:34:
+      493 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                   ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:493:41:
+      493 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                          ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:493:43:
+      493 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                            ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:494:8:
+      494 │     try {
+          ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:495:18:
+      495 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                   ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:495:27:
+      495 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                            ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:495:60:
+      495 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                                             ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:495:67:
+      495 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                                                    ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:496:6:
+      496 │     } catch (e) {
+          ╵       ~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'e' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:496:13:
+      496 │     } catch (e) {
+          ╵              ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:501:2:
+      501 │   private loadNotesFromStorage(): Note[] {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:501:32:
+      501 │   private loadNotesFromStorage(): Note[] {
+          ╵                                 ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:501:39:
+      501 │   private loadNotesFromStorage(): Note[] {
+          ╵                                        ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:501:41:
+      501 │   private loadNotesFromStorage(): Note[] {
+          ╵                                          ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:502:44:
+      502 │     const savedNotes = localStorage.getItem(this.STORAGE_KEY);
+          ╵                                             ~~~~
+
+
+✘ [ERROR] TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:505:34:
+      505 │         const parsed = JSON.parse(savedNotes);
+          ╵                                   ~~~~~~~~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:519:2:
+      519 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵   ~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'saveNotesToStorage'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:519:10:
+      519 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵           ~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:519:29:
+      519 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                              ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:519:34:
+      519 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                   ^
+
+
+✘ [ERROR] TS1011: An element access expression should take an argument. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:519:41:
+      519 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                          ^
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:519:43:
+      519 │   private saveNotesToStorage(notes: Note[]): void {
+          ╵                                            ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:520:8:
+      520 │     try {
+          ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:521:18:
+      521 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                   ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:521:27:
+      521 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                            ~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'notes'. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:521:60:
+      521 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                                             ~~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:521:67:
+      521 │       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(notes));
+          ╵                                                                    ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:522:6:
+      522 │     } catch (e) {
+          ╵       ~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'e' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:522:13:
+      522 │     } catch (e) {
+          ╵              ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/services/note.service.ts:526:0:
+      526 │ }
+          ╵ ^
+
+
+✘ [ERROR] Expected string but found "("
+
+    src/app/services/note.service.ts:2:49:
+      2 │ import { Injectable, loadNotesFromStorage } from (): Note[] => {
+        ╵                                                  ^
+
+
+❯ Changes detected. Rebuilding...
